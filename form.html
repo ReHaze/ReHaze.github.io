@@ -1,0 +1,297 @@
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="overlay hidden"></div>
+		<header class="page-header">
+			<nav class="main-menu">
+				<ul class="main-menu__list list">
+					<li class="list__item">
+						<a href="index.html" class="list__link">Главная</a>
+					</li>
+					<li class="list__item">
+						<a href="photo.html" class="list__link">Фото и видео</a>
+					</li>
+					<li class="list__item">
+						<a href="form.html" class="list__link">Форма отзывы</a>
+					</li>
+					<li class="list__item">
+						<a href="#" class="list__link">Html academy</a>
+					</li>
+				</ul>
+				<div id="root"></div>
+			</nav>
+			<a href="#" class="page-header__logo">
+				<div class="page-header__logo-image"></div>
+			</a>		
+		</header>
+		<main class="page-main">
+			<section class="intro-form">
+				<div class="intro-photo_bg">
+				</div>
+				<h1 class="intro-form__title">
+					Оставьте свой отзыв
+				</h1>
+				<p class="intro-form__description">
+					Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+				</p>
+				<div class="greyline"></div>
+			</section>
+			<section class="form-information">
+				<form action="#" class="form-information__fields">
+					<div class="form-information__fields-sector">
+						<h2 class="form-information__title">Представьтесь:</h2>
+						<label class="form-information__person" for="name"><b class="contacts_text-name">Имя*:</b>
+						<input type="text"  id="name" value="" class="form-information__name">	
+						</label>
+						<label class="form-information__person" for="lastname"><b class="contacts_text-name">Фамилия*:</b>
+							<input type="text" id="lastname" value="" class="form-information__name">
+						</label>
+						
+						<label class="form-information__person" for="patronymic"><b class="contacts_text-name">Отчество*:</b>
+							<input type="text" id="patronymic" value="" class="form-information__name">
+						</label>
+						</div>
+						<div class="greyline"></div>
+						<div class="form-information__fields-sector">
+							<h2 class="form-information__title">Контактная информация:</h2>
+							<label for="tel" class="form-information__contacts">
+								<b class="contacts__text">Контактный телефон</b>
+								<input type="tel"  id="tel" value="" class="contacts__input"><span class="contacts__phone"></span>
+							</label>
+							<label for="mail" class="form-information__contacts">
+								<b class="contacts__text">Электронная почта*:</b>
+								<input type="email" id="mail" value="" class="contacts__input"><span class="contacts__mail"></span>	
+							</label>										
+						</div>
+						<div class="greyline"></div>
+
+						<div class="form-information__fields-sector">
+							<h2 class="form-information__title">Ваше общее впечатление:</h2>		
+							<label class="choice">Скорее положительное
+							<input type="radio" checked="checked" name="radio">
+							<span class="checkmark"></span>
+							</label>
+							<label class="choice">Скорее отрицательное
+							<input type="radio" name="radio">
+							<span class="checkmark"></span>
+							</label>
+							<label class="choice">Затрудняюсь ответить
+							<input type="radio" name="radio">
+							<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="greyline"></div>
+
+						<div class="form-information__fields-sector">
+							<h2 class="form-information__title">
+							Посещенные достопримечательности:
+							</h2>
+							<div class="places-wrapper">
+							<label class="places">Мост Дьявола
+									<input type="checkbox" checked="checked">
+									<span class="check"></span>
+							</label>
+							<label class="places">Слайд-парк
+									<input type="checkbox">
+									<span class="check"></span>
+							</label>
+							<label class="places">Гора-Колокол
+									<input type="checkbox">
+									<span class="check"></span>
+							</label>
+							<label class="places">Красные скалы
+									<input type="checkbox">
+									<span class="check"></span>
+							</label>
+							</div>
+						</div>
+						<div class="greyline"></div>
+						<div class="form-information__fields-sector">
+							<h2 class="form-information__title">Опишите свои эмоции</h2>
+							<textarea name="" class="text-content"></textarea>
+							<input type="submit" value="ОТПРАВИТЬ ОТЗЫВ" class="submit-button">
+						</div>
+				</form>
+			</section>
+		</main>
+		<footer class="page-footer">
+			<div class="page-footer__contacts contacts">
+				<p class="contacts__tag">
+					#VISITSEDONA
+				</p>
+				<ul class="contacts__social">
+					<li class="contacts__social-item">
+						<a href="" class="contacts__social-twitter"></a>
+					</li>
+					<li class="contacts__social-item">
+						<a href="" class="contacts__social-facebook"></a>
+					</li>
+					<li class="contacts__social-item">
+					<a href="" class="contacts__social-youtube"></a>	
+					</li>
+				</ul>
+				<div class="page-footer__copyright copyright">
+
+					<div class="copyright__wrapper">
+					<b class="copyright__text">Разработано</b>
+						<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+						</div>
+				</div>
+			</div>
+		</footer>	
+	</div>
+	<div class="form-validation-fail hidden">
+		<h1 class="form-validation-fail__title">Что-то пошло не так!</h1>
+		<p class="form-validation-fail__description">Проверьте поля, выделенные красным, 
+			скорее всего вы забыли их заполнить
+		</p>
+		<button type="button" class="form-validation-fail__close-button">ОК</button>
+	</div>
+	<div class="form-validation-success hidden">
+	   	<h1 class="form-validation-success__title">Ваш отзыв отправлен!</h1>
+		<p class="form-validation-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+				В ближайшее время мы опубликуем его на сайте.
+		</p>
+		<div class="form-validation-success__close-wrapper">
+			<button type="button" class="form-validation-success__close-button">
+				ЗАКРЫТЬ ОКНО
+			</button>
+		</div>
+	</div>
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<script>
+		var telephone_text = document.querySelector('.contacts__text');	
+		function myFunction(x) {
+			if (x.matches) { 
+				telephone_text.innerText = "телефон";	
+			} 
+			else {
+				telephone_text.innerText = "контактный телефон*";	
+			}
+		}
+		var x = window.matchMedia("(min-width: 1200px)")
+		myFunction(x) 
+		x.addListener(myFunction) 
+		form = document.querySelector(".form-information__fields");
+		window_fail = document.querySelector(".form-validation-fail");
+		window_success = document.querySelector(".form-validation-success");
+		overlay = document.querySelector(".overlay");
+		wrapper = document.querySelector(".wrapper");
+		window_fail_button = document.querySelector(".form-validation-fail__close-button");
+		window_success_button = document.querySelector(".form-validation-success__close-button");			
+		form.addEventListener("submit", function(e) {
+			var values = Array.from(document.querySelectorAll("input"));
+			var name = values[0];
+			var lastName = values[1];
+			var secondaryName = values[2];
+			var phone = values[3];
+			var mail = values[4];
+			name.style.border = "";
+			lastName.style.border = "";
+			secondaryName.style.border = "";
+			phone.style.border = "";
+			mail.style.border = "";
+		
+			if( name.value.length == 0 ) {
+					name.style.border = "2px solid red";
+			}
+			if (lastName.value.length == 0 ) {
+					lastName.style.border = "2px solid red";
+			}
+		
+			if (secondaryName.value.length == 0 ) {
+					secondaryName.style.border = "2px solid red";
+			}
+			if (phone.value.length == 0 ) {
+					phone.style.border = "2px solid red";
+			}
+		
+			if (mail.value.length == 0 ) {
+					mail.style.border = "2px solid red";
+			}
+		
+			if((name.value.length == 0) || (lastName.value.length == 0)
+				|| (secondaryName.value.length == 0) || (phone.value.length == 0)
+				|| phone.value.length == 0 || mail.value.length == 0 ) {
+					
+					overlay.classList.remove("hidden");
+					window_fail.classList.remove("hidden");
+					wrapper.style.filter = "blur(5px)";
+			}
+			else {
+				overlay.classList.remove("hidden");
+				wrapper.style.filter = "blur(5px)";
+				window_success.classList.remove("hidden");
+			}
+			console.log(phone);
+			e.preventDefault();
+		})
+
+		window_fail_button.addEventListener("click", function(e){
+			overlay.classList.add("hidden");
+			window_fail.classList.add("hidden");
+			wrapper.style.filter = "";
+		})
+
+		window_success_button.addEventListener("click", function(e){
+			overlay.classList.add("hidden");
+			window_success.classList.add("hidden");
+			wrapper.style.filter = "";
+		});
+	</script>
+		<script type="text/babel">
+		'use strict'
+		var menu = document.querySelector(".main-menu__list");
+		class Toggle extends React.Component {
+			constructor(props) {
+				super(props);
+				this.handleClick = this.handleClick.bind(this);
+				this.state = {
+					classes: 'main-menu__close'
+				}
+			}
+			handleClick() {
+				if (menu.classList.contains("hidden-item")) {
+						menu.classList.remove("hidden-item");
+						this.setState({
+							classes: 'main-menu__close'
+						})		
+				}
+				else {
+					menu.classList.add("hidden-item");
+					this.setState({
+						classes: 'main-menu__open'
+					})
+				}
+			}
+			render() {
+				return (
+					<button className={this.state.classes} onClick={this.handleClick}></button>);
+			}
+		}
+		ReactDOM.render(<Toggle/>, document.getElementById('root') );
+	</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

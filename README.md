@@ -1,1 +1,1 @@
-# ReHaze.github.io
+Sedona Template
