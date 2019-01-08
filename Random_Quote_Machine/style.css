@@ -1,82 +1,96 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
 }
 
 .wrapper {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 1200ms linear;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 1200ms linear;
 }
 
 .box {
-    width: 500px;
-    min-height: 300px;
-    position: relative;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 12px 1px black;
+	width: 500px;
+	min-height: 300px;
+	position: relative;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 12px 1px black;
 }
 
 .sign {
-  quotes: "\201C""\201D""\2018""\2019";
-  width: 35px;
-  height: 30px;
-  font-size: 3em;
-  margin-bottom: auto;
-  }
+	quotes: "\201C""\201D""\2018""\2019";
+	flex-basis: 10%;
+	height: 30px;
+	font-size: 3em;
+	margin-bottom: auto;
+}
 
 .sign::before {
-    color: #ccc;
-    content: open-quote;
-    margin-right: 10px;  
-  }
+	color: #ccc;
+	content: open-quote;
+	margin-right: 10px;  
+}
 
 .quote-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 400px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 40px;
-    font-size: 24px;
-  }
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	height: auto;
+	padding: 0 20px;
+	margin-top: 40px;
+	font-size: 24px;
+}
 
 .text {
-    margin: 0;
-    width: 365px;
-  }
+	margin: 0;
+	flex-basis: 90%;
+}
+
+.animate {
+	animation-name: opacity;
+	animation-duration: 1.2s;
+	animation-timing-function: ease-in-out;
+}
 
 .author {
-    flex-grow: 1;
-    text-align: right;
-    margin: 0;
-    margin-top: 25px;
-    margin-bottom: 80px;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    color: #333;
-  }
+	flex-grow: 1;
+	text-align: right;
+	margin: 0;
+	margin-top: 25px;
+	margin-bottom: 80px;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+	color: #333;
+}
 
 .btn {
-    position: absolute;
-    bottom: 25px;
-    color:azure;
-    font-size: 15px;
-    right: 47px;
-    outline: none;
-    cursor:pointer;
-    padding: 10px;
-    border: none;
-    transition: background-color 1200ms linear;
+	position: absolute;
+	bottom: 25px;
+	color:azure;
+	font-size: 15px;
+	right: 47px;
+	outline: none;
+	cursor:pointer;
+	padding: 10px;
+	border: none;
+	transition: background-color 1200ms linear;
 }
 
 .author::before {
-  content: "- ";
+	content: "- ";
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
 }
