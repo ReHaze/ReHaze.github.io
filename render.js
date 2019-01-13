@@ -3,11 +3,11 @@
 
 	class Toggle extends React.Component {
   		constructor(props) {
-		super(props);
-		this.handleClick = this.handleClick.bind(this);
-		this.state = {
-			classes: 'main-menu__close'
-		}
+			super(props);
+			this.handleClick = this.handleClick.bind(this);
+			this.state = {
+				classes: 'main-menu__close'
+			}
   		}
     handleClick() {
     	if (menu.classList.contains("hidden-item")) {
