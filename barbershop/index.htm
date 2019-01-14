@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.min.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -25,23 +27,23 @@
 			</div>
 		</header>
 		<main class="container">
-			<div class="logo">
+			<div class="logo fadeIn animated slower">
 				<img src="./img/Logo.png" alt="Барбершоп">
 			</div>
 			<section class="features">
-				<div class="item-feature">
+				<div class="item-feature animated bounce">
 					<h2 class="feature-title">Быстро</h2>
 					<p>мы делаем свою работу быстро! два часа
 					пролетят незаметно и вы - счастливый обладатель 
 				стильной стрижки-минутки!</p>
 				</div>
-				<div class="item-feature">
-					<h2 class="feature-title">круто</h2>
+				<div class="item-feature animated bounce">
+					<h2  class="feature-title ">круто</h2>
 					<p>Забудьте, как вы стриглись раньше.<br>
 					Мы сделаем из вас звезду футбола и кино!
 				Во всяком случае внешне.</p>
 				</div>
-				<div class="item-feature">
+				<div class="item-feature animated bounce">
 					<h2 class="feature-title">дорого</h2>
 					<p>
 						Наши мастера - профессионалы своего дела и<br>
@@ -52,7 +54,7 @@
 			</section>
 			<div class="content">
 				<div class="left-content">
-					<h2 class="content-title">Новости</h2>
+					<h2  class="content-title">Новости</h2>
 					<ul class="news">
 						<li>
 							<p>
@@ -71,7 +73,7 @@
 							<time datetime="2018-01-18">19 сентября</time>
 						</li>
 					</ul>
-					<a href="#" class="btn btn-news">Все новости</a>
+					<a href="#" data-aos="zoom-in" data-aos-offset="-100" class="btn btn-news">Все новости</a>
 				</div>
 				<div class="right-content">
 					<h2 class="content-title">Фотогалерея</h2>
@@ -79,8 +81,8 @@
 						<figure class="gallery-content">
 							<img src="img/zal.png" alt="Галерея">
 						</figure>
-						<button class="btn btn-left">Назад</button>
-						<button class="btn btn-right">Вперед</button>
+						<button data-aos="zoom-in" data-aos-offset="-100" class="btn btn-left">Назад</button>
+						<button data-aos="zoom-in" data-aos-offset="-100" class="btn btn-right">Вперед</button>
 					</div>
 				</div>
 			</div>
@@ -94,8 +96,8 @@
 						пн - пт: с 10:00 до 22:00<br>
 						сб - вс: с 10:00 до 19:00
 					</p>
-					<a href="#" class="btn fixed map-link">Как проехать</a>
-					<a href="#" class="btn fixed">Обратная связь</a>
+					<a href="#" data-aos="zoom-in" data-aos-offset="-100" class="btn fixed map-link">Как проехать</a>
+					<a href="#" data-aos="zoom-in" data-aos-offset="-100" class="btn fixed">Обратная связь</a>
 				</div>
 				<div class="right-content">
 					<h2 class="content-title">Записаться</h2>
@@ -105,14 +107,14 @@
 						<input type="text" name="time" value="" placeholder="время">
 						<input type="text" name="name" value="" placeholder="имя">
 						<input type="tel" name="phone" value="" placeholder="телефон">
-						<button type="submit" class="btn">Отправить</button>
+						<button type="submit" data-aos="zoom-in"  data-aos-offset="-100" class="btn">Отправить</button>
 					</form>
 				</div>
 			</div>
 		</main>	
 		<footer>
 			<div class="container">				
-				<div class="footer-contacts">
+				<div class="footer-contacts" data-aos="zoom-in" data-aos-offset="-120">
 					<p>
 						БАРБЕРШОП "БОРОДИНСКИЙ"<br>
 						адрес: г.Санкт-Петербург, 
@@ -121,13 +123,13 @@
 						телефон: +7(495)666-02-66
 					</p>
 				</div>
-				<div class="footer-social">
+				<div class="footer-social " data-aos="zoom-in" data-aos-offset="-120">
 					<p>Давайте дружить!</p>
 					<a href="#" id="vk"></a> 	
 					<a href="#" id="face"></a>
 					<a href="#" id="tele"></a>
 				</div>
-				<div class="footer-copyright">
+				<div class="footer-copyright" data-aos="zoom-in" data-aos-offset="-120">
 					<p>Разработано:</p>
 					<a href="#" class="btn">htmlacademy.ru</a>
 				</div>				
@@ -156,7 +158,12 @@
 		</div>
 		<div class="overlay">
 		</div>
-		<script type="text/javascript" src="js/scripts.min.js">
+		<script type="text/javascript" src="js/scripts.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script>
+			 AOS.init({
+				once: true
+			 });
 		</script>
 	</body>
 </html>

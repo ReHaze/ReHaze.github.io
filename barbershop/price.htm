@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.min.css">
 	</head>
 	<body class="bg">
 		<header class="main-header-price">
@@ -29,15 +31,15 @@
 		</header>	
 		<main class="container">
 				<div class="content-price">	
-			<div class="top-price">
+			<div class="top-price fadeIn animated slower">
 				<h1>Прайс-лист</h1>
 				<div class="breadcrumbs-price">
 					<a href="#">Главная</a>
 					<a href="#">Прайс-лист</a>
 				</div>
-				<h2>Истинно мужская классика</h2>
+				<h2 class="fadeIn animated slower">Истинно мужская классика</h2>
 			</div>
-			<div class="service">
+			<div class="service fadeIn animated slower">
 				<div class="service-item">
 					<b>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br> ЛУЧШИЕ СРЕДСТВА:</b>
 					<ul>
@@ -76,7 +78,7 @@
 		</main>			
 		<footer class="shop-footer">
 			<div class="container">			
-				<div class="footer-contacts">
+				<div class="footer-contacts" data-aos="zoom-in" data-aos-offset="-120">
 					<p>
 						БАРБЕРШОП "БОРОДИНСКИЙ"<br>
 						адрес: г.Санкт-Петербург, 
@@ -85,13 +87,13 @@
 						телефон: +7(495)666-02-66
 					</p>
 				</div>
-				<div class="footer-social">
+				<div class="footer-social" data-aos="zoom-in" data-aos-offset="-120">
 					<p>Давайте дружить!</p>
 					<a href="#" id="vk"></a> 	
 					<a href="#" id="face"></a>
 					<a href="#" id="tele"></a>
 				</div>
-				<div class="footer-copyright">
+				<div class="footer-copyright" data-aos="zoom-in" data-aos-offset="-120">
 					<p>Разработано:</p>
 					<a href="#" class="btn">htmlacademy.ru</a>
 				</div>				
@@ -114,5 +116,12 @@
 			</form>	
 		</div>
 		<script type="text/javascript" src="js/scripts.min.js"></script>
+		<script type="text/javascript" src="js/scripts.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script>
+			 AOS.init({
+				once: true
+			 });
+		</script>
 	</body>
 </html>
