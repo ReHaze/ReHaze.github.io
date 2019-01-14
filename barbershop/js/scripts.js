@@ -43,25 +43,19 @@
 					e.preventDefault();
 					console.log("нужно ввести пароль");
 					modal.classList.add("modal-error");
-				
-
 				}
 				else {
 					localStorage.setItem("login", login.value);
 				}
 			})
 
-
 			mapLink.addEventListener("click", function(e){
 				e.preventDefault();
 				map.classList.add("map-show");
 				overlay.classList.add("overlay-show");
-
-
 			})
 
 			mapClose.addEventListener("click", function(e){
-
 				map.classList.remove("map-show");
 				overlay.classList.remove("overlay-show");		
 
