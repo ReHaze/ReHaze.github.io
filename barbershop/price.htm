@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Барбершоп</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -15,8 +16,10 @@
 				<div class="image-logo">
 					<a href="index.htm" class="def-page"></a>
 				</div>
-				<nav class="navigation-price"> 
-					<ul class="main-menu">
+				<span style="font-size:30px;cursor:pointer" class="burger" onclick="openNav()">&#9776;</span>
+				<nav class="navigation-price overlay-menu">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10006;</a> 
+					<ul class="main-menu overlay-content">
 						<li><a href="index.htm">Информация</a></li>
 						<li><a href="#">Новости</a></li>
 						<li><a href="#">Прайс-лист</a></li>
@@ -122,6 +125,16 @@
 			 AOS.init({
 				once: true
 			 });
+		</script>
+		<script>
+			function openNav() {
+				document.querySelector(".overlay-menu").classList.remove("collapse-menu");
+				document.querySelector(".overlay-menu").classList.add("full-menu");
+			}
+			function closeNav() {
+				document.querySelector(".overlay-menu").classList.remove("full-menu");	
+				document.querySelector(".overlay-menu").classList.add("collapse-menu");
+			}
 		</script>
 	</body>
 </html>
