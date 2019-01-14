@@ -6,9 +6,6 @@
 	
 	<link rel="stylesheet" href="public/css/style.min.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
 </head>
 <body>
 	<header class="page-header">
@@ -168,37 +165,9 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/babel">
-	'use strict'
-	var menu = document.querySelector(".main-menu__list");
-	class Toggle extends React.Component {
-  		constructor(props) {
-			super(props);
-			this.handleClick = this.handleClick.bind(this);
-			this.state = {
-				classes: 'main-menu__close'
-			}
-  		}
-		handleClick() {
-			if (menu.classList.contains("hidden-item")) {
-					menu.classList.remove("hidden-item");
-					this.setState({
-						classes: 'main-menu__close'
-					})		
-			}	
-			else {
-				menu.classList.add("hidden-item");
-				this.setState({
-						classes: 'main-menu__open'
-					})
-			}
-		}
-		render() {
-			return (
-				<button className={this.state.classes} onClick={this.handleClick}></button>);
-		}
-	}	
-	ReactDOM.render(<Toggle/>, document.getElementById('root') );
-	</script>
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	<script src="render.js" type="text/babel"></script>
 </body>
 </html>
