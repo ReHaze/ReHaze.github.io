@@ -1,5 +1,3 @@
-// Создаем форму для загрузки
-
 let photo_overlay = document.querySelector(".upload-overlay");
 let inputElement = document.querySelector("#upload-file");
 let photo_close = document.querySelector(".upload-form-cancel");
@@ -15,7 +13,7 @@ function handleFiles(e) {
 
     reader.addEventListener(
         "load",
-        function() {
+        function () {
             filter_image.src = reader.result;
             load();
         },
@@ -31,14 +29,14 @@ function handleFiles(e) {
         photo_overlay.classList.remove("hidden");
     }
 
-    document.addEventListener("keydown", function(event) {
+    document.addEventListener("keydown", function (event) {
         if (event.keyCode === 27) {
             photo_overlay.classList.add("hidden");
         }
     });
 }
 
-photo_close.addEventListener("click", function() {
+photo_close.addEventListener("click", function () {
     photo_overlay.classList.add("hidden");
     inputElement.click();
 });
@@ -56,7 +54,7 @@ let lineWidth = 455;
 let result;
 let pin = document.querySelector(".upload-effect-level-pin");
 
-increase_size.addEventListener("click", function() {
+increase_size.addEventListener("click", function () {
     let x = parseInt(increase_input.value);
     x += 25;
     if (x == 50) {
@@ -73,7 +71,7 @@ increase_size.addEventListener("click", function() {
     increase_input.value = x;
 });
 
-decrease_size.addEventListener("click", function() {
+decrease_size.addEventListener("click", function () {
     let x = parseInt(increase_input.value);
     x -= 25;
     if (x == 75) {
@@ -94,7 +92,7 @@ let effect_line = document.querySelector(".upload-effect-level");
 
 effect.addEventListener(
     "click",
-    function(e) {
+    function (e) {
         let target = e.target;
 
         if (target.classList.contains("upload-effect-none")) {
@@ -198,7 +196,7 @@ function dragElement(elmnt) {
 
 let form = document.querySelector(".upload-form");
 
-form.addEventListener("submit", function(evt) {
+form.addEventListener("submit", function (evt) {
     evt.preventDefault();
     let request = new XMLHttpRequest();
     request.open("POST", "http://localhost");
