@@ -12,3 +12,6 @@
 [0929/023053.442:ERROR:settings.cc(266)] Settings version is not 1
 [1008/180158.307:ERROR:settings.cc(266)] Settings version is not 1
 [1010/095711.771:ERROR:settings.cc(266)] Settings version is not 1
+[0309/163054.763:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0309/163120.720:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0309/163150.368:ERROR:crash_report_database_win.cc(428)] unexpected header
