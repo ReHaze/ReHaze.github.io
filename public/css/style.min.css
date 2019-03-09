@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
     min-height: 750px;
     font-style: normal;
+    overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -95,8 +96,7 @@ a {
         bottom: 0;
         height: 57px;
         width: 100%;
-        background: url("../../img/intro-triangle-photo.png") no-repeat center
-            bottom;
+        background: url("../../img/intro-triangle-photo.png") no-repeat center bottom;
     }
     .intro-photo_bg::before {
         content: "";
@@ -393,10 +393,10 @@ a {
         background-color: #f2f2f2;
         border-radius: 50%;
     }
-    .choice:hover input ~ .checkmark {
+    .choice:hover input~.checkmark {
         background-color: #f2f2f2;
     }
-    .choice input:checked ~ .checkmark {
+    .choice input:checked~.checkmark {
         background-color: #f2f2f2;
     }
     .checkmark:after {
@@ -404,7 +404,7 @@ a {
         position: absolute;
         display: none;
     }
-    .choice input:checked ~ .checkmark:after {
+    .choice input:checked~.checkmark:after {
         display: block;
     }
     .choice .checkmark:after {
@@ -451,10 +451,10 @@ a {
         border-radius: 2px;
         background-color: #eee;
     }
-    .places:hover input ~ .check {
+    .places:hover input~.check {
         background-color: #f2f2f2;
     }
-    .places input:checked ~ .check {
+    .places input:checked~.check {
         background-color: #f2f2f2;
     }
     .check:after {
@@ -462,7 +462,7 @@ a {
         position: absolute;
         display: none;
     }
-    .places input:checked ~ .check:after {
+    .places input:checked~.check:after {
         display: block;
     }
     .places .check:after {
@@ -859,20 +859,17 @@ a {
     .contacts__social-twitter {
         display: block;
         height: 100%;
-        background: #81b3d2 url("../../img/icon-twitter.png") no-repeat center
-            center;
+        background: #81b3d2 url("../../img/icon-twitter.png") no-repeat center center;
     }
     .contacts__social-facebook {
         display: block;
         height: 100%;
-        background: #81b3d2 url("../../img/icon-facebook.png") no-repeat center
-            center;
+        background: #81b3d2 url("../../img/icon-facebook.png") no-repeat center center;
     }
     .contacts__social-youtube {
         display: block;
         height: 100%;
-        background: #81b3d2 url("../../img/icon-youtube.png") no-repeat center
-            center;
+        background: #81b3d2 url("../../img/icon-youtube.png") no-repeat center center;
     }
     .page-footer__copyright {
         margin-top: 30px;
@@ -1108,8 +1105,7 @@ a {
         height: 520px;
     }
     .intro__title {
-        background: url("../../img/text-index-tablet.png") no-repeat center
-            center;
+        background: url("../../img/text-index-tablet.png") no-repeat center center;
         width: 460px;
         margin: 0 auto;
         margin-top: 50px;
@@ -1117,8 +1113,7 @@ a {
     }
     .intro__bg::after {
         height: 60px;
-        background: url(../../img/intro-triangle-tablet.png) center bottom
-            no-repeat;
+        background: url(../../img/intro-triangle-tablet.png) center bottom no-repeat;
     }
     .intro-photo_bg {
         height: 290px;
@@ -1129,8 +1124,7 @@ a {
         margin-top: 90px;
     }
     .intro-photo_bg::after {
-        background: url(../../img/intro-triangle-tablet-photo.png) no-repeat
-            center bottom;
+        background: url(../../img/intro-triangle-tablet-photo.png) no-repeat center bottom;
     }
     .intro-photo__title {
         font-size: 30px;
@@ -1205,8 +1199,7 @@ a {
         margin-top: 45px;
         position: relative;
     }
-    .form-information__fields-sector:nth-child(3)
-        .form-information__title::before {
+    .form-information__fields-sector:nth-child(3) .form-information__title::before {
         content: "";
         position: absolute;
         top: 50%;
@@ -1216,8 +1209,7 @@ a {
         margin-top: -1px;
         background: #dbdbdb;
     }
-    .form-information__fields-sector:nth-child(3)
-        .form-information__title::after {
+    .form-information__fields-sector:nth-child(3) .form-information__title::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -1262,8 +1254,7 @@ a {
         position: relative;
         padding: 0 160px;
     }
-    .form-information__fields-sector:nth-child(7)
-        .form-information__title::before {
+    .form-information__fields-sector:nth-child(7) .form-information__title::before {
         content: "";
         position: absolute;
         top: 50%;
@@ -1273,8 +1264,7 @@ a {
         margin-top: -1px;
         background: #dbdbdb;
     }
-    .form-information__fields-sector:nth-child(7)
-        .form-information__title::after {
+    .form-information__fields-sector:nth-child(7) .form-information__title::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -1295,8 +1285,7 @@ a {
         text-align: center;
         position: relative;
     }
-    .form-information__fields-sector:nth-child(9)
-        .form-information__title::before {
+    .form-information__fields-sector:nth-child(9) .form-information__title::before {
         content: "";
         position: absolute;
         top: 50%;
@@ -1306,8 +1295,7 @@ a {
         margin-top: -1px;
         background: #dbdbdb;
     }
-    .form-information__fields-sector:nth-child(9)
-        .form-information__title::after {
+    .form-information__fields-sector:nth-child(9) .form-information__title::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -1432,8 +1420,7 @@ a {
         left: 50%;
     }
     .advantages__list-item-eat::before {
-        background: url(../../img/icon-burger-tablet.png) no-repeat center
-            center;
+        background: url(../../img/icon-burger-tablet.png) no-repeat center center;
     }
     .advantages__list-item-souv::before {
         background: url(../../img/icon-gift-tablet.png) no-repeat center center;
@@ -1585,8 +1572,7 @@ a {
         height: 520px;
     }
     .intro-photo_bg {
-        background: url(../../img/back-desktop-photo.jpg) bottom center
-            no-repeat;
+        background: url(../../img/back-desktop-photo.jpg) bottom center no-repeat;
         height: 300px;
     }
     .intro-photo_bg::after {
@@ -1595,8 +1581,7 @@ a {
         bottom: 0;
         height: 57px;
         width: 100%;
-        background: url("../../img/intro-triangle-photo-desktop.png") no-repeat
-            center bottom;
+        background: url("../../img/intro-triangle-photo-desktop.png") no-repeat center bottom;
     }
     .page-main {
         min-width: 1200px;
@@ -1672,20 +1657,16 @@ a {
     .form-information__fields-sector:nth-child(7) .form-information__title {
         padding: 0 300px;
     }
-    .form-information__fields-sector:nth-child(7)
-        .form-information__title::after {
+    .form-information__fields-sector:nth-child(7) .form-information__title::after {
         width: 280px;
     }
-    .form-information__fields-sector:nth-child(7)
-        .form-information__title::before {
+    .form-information__fields-sector:nth-child(7) .form-information__title::before {
         width: 280px;
     }
-    .form-information__fields-sector:nth-child(9)
-        .form-information__title::before {
+    .form-information__fields-sector:nth-child(9) .form-information__title::before {
         width: 280px;
     }
-    .form-information__fields-sector:nth-child(9)
-        .form-information__title::after {
+    .form-information__fields-sector:nth-child(9) .form-information__title::after {
         width: 280px;
     }
     .form-information__fields-sector:nth-child(9) {
@@ -1700,8 +1681,7 @@ a {
     }
     .intro__bg::after {
         height: 60px;
-        background: url(../../img/intro-triangle-desktop.png) center bottom
-            no-repeat;
+        background: url(../../img/intro-triangle-desktop.png) center bottom no-repeat;
     }
     .block-item__author {
         color: #fff;
@@ -1730,10 +1710,8 @@ a {
     .form-information__fields-sector:nth-child(3) {
         width: 960px;
     }
-    .form-information__fields-sector:nth-child(3)
-        .form-information__title::after,
-    .form-information__fields-sector:nth-child(3)
-        .form-information__title::before {
+    .form-information__fields-sector:nth-child(3) .form-information__title::after,
+    .form-information__fields-sector:nth-child(3) .form-information__title::before {
         width: 280px;
     }
     .form-information__fields-sector:nth-child(1) {

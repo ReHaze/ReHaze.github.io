@@ -38,7 +38,7 @@
                         </ul>
                         <button class="main-menu__close"></button>
                     </nav>
-                    <a href="#" class="page-header__logo">
+                    <a href="index.html" class="page-header__logo">
                         <div class="page-header__logo-image"></div>
                     </a>
                 </header>
@@ -291,12 +291,12 @@
         <script src="render.js"></script>
         <script src="form.js"></script>
         <script>
-            document.addEventListener("DOMContentLoaded", function(event) {
+            window.onload = () => {
                 document
                     .querySelector(".loader-wrapper")
                     .classList.add("hidden");
                 document.querySelector(".main_window").classList.add("visible");
-            });
+            };
         </script>
     </body>
 </html>
