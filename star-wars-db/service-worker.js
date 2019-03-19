@@ -11,12 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js"
-);
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/star-wars-db/precache-manifest.d6be30842b7a5d8f0b61486f83e9eb45.js"
+  "/precache-manifest.5d53bee987bcb672ea93172f30d9bba3.js"
 );
 
 workbox.clientsClaim();
@@ -30,6 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/star-wars-db/index.html", {
-  blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/]
+workbox.routing.registerNavigationRoute("/index.html", {
+  
+  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
