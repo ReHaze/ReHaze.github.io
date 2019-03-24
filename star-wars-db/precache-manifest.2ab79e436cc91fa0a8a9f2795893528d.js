@@ -16,23 +16,27 @@ self.__precacheManifest = [
     "url": "/star-wars-db/static/media/Starjhol.53c0bf82.ttf"
   },
   {
-    "revision": "25275995be36cc1c3af1",
-    "url": "/star-wars-db/static/js/runtime~main.25275995.js"
+    "revision": "5ae9e0cbe24b9b3f0fe11d5ad0306521",
+    "url": "/star-wars-db/static/media/AvenirLTStd-Medium.5ae9e0cb.woff"
   },
   {
-    "revision": "91ce559365468aa33e30",
-    "url": "/star-wars-db/static/js/main.91ce5593.chunk.js"
+    "revision": "69a518fa9cf0c766a323",
+    "url": "/star-wars-db/static/js/runtime~main.5a8b5f29.js"
   },
   {
-    "revision": "e5c12e2a06d25c015435",
-    "url": "/star-wars-db/static/js/1.e5c12e2a.chunk.js"
+    "revision": "d7e52555622ca306183b",
+    "url": "/star-wars-db/static/js/main.773fd357.chunk.js"
   },
   {
-    "revision": "91ce559365468aa33e30",
-    "url": "/star-wars-db/static/css/main.1a8356bc.chunk.css"
+    "revision": "97bd33a55822663e075a",
+    "url": "/star-wars-db/static/js/2.2c9c8588.chunk.js"
   },
   {
-    "revision": "284be8d732a72e159fb6c8520f44a6b3",
+    "revision": "d7e52555622ca306183b",
+    "url": "/star-wars-db/static/css/main.49a4d0d6.chunk.css"
+  },
+  {
+    "revision": "a10332a95a817af0835e58575ac312a2",
     "url": "/star-wars-db/index.html"
   }
 ];
