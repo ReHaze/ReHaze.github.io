@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Roman_numerals_converter/precache-manifest.52eba4b57df688fbe1080daa59a837d9.js"
+  "/Roman_numerals_converter/precache-manifest.a5a01406c6a6a7c2d0e8df5d35efe3f9.js"
 );
 
 workbox.clientsClaim();
