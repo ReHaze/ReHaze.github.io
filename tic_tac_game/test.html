@@ -8,7 +8,7 @@
     <title>Tic Tac game</title>
   </head>
   <body>
-    <div class="container" id="pew">
+    <div class="container">
       <div class="cell"></div>
       <div class="cell"></div>
       <div class="cell"></div>
@@ -16,9 +16,12 @@
       <div class="cell"></div>
       <div class="cell"></div>
       <div class="cell"></div>
+
       <div class="cell"></div>
       <div class="cell"></div>
-      <button type="button" class="reset">Начать заново</button>
+      <button type="button" id="pew" class="reset">
+        Начать заново
+      </button>
     </div>
     <span class="ex"></span>
     <span class="dex"></span>
@@ -26,6 +29,11 @@
       <h2 class="winner-text">s</h2>
       <span class="close-btn">&#10006;</span>
     </div>
-    <script src="logic.js"></script>
+    <script>
+      var x = document.getElementById("pew");
+      x.attachEvent("onclick", function() {
+        alert("ff");
+      });
+    </script>
   </body>
 </html>
