@@ -1,0 +1,17 @@
+{
+  "main.css": "/Speech_Synthesizer/static/css/main.937034a5.chunk.css",
+  "main.js": "/Speech_Synthesizer/static/js/main.b95ce9ce.chunk.js",
+  "main.js.map": "/Speech_Synthesizer/static/js/main.b95ce9ce.chunk.js.map",
+  "runtime~main.js": "/Speech_Synthesizer/static/js/runtime~main.d929501b.js",
+  "runtime~main.js.map": "/Speech_Synthesizer/static/js/runtime~main.d929501b.js.map",
+  "static/css/2.3f13305d.chunk.css": "/Speech_Synthesizer/static/css/2.3f13305d.chunk.css",
+  "static/js/2.9ed7e963.chunk.js": "/Speech_Synthesizer/static/js/2.9ed7e963.chunk.js",
+  "static/js/2.9ed7e963.chunk.js.map": "/Speech_Synthesizer/static/js/2.9ed7e963.chunk.js.map",
+  "index.html": "/Speech_Synthesizer/index.html",
+  "precache-manifest.44f3b73919dd2ec1153f78aada453e25.js": "/Speech_Synthesizer/precache-manifest.44f3b73919dd2ec1153f78aada453e25.js",
+  "service-worker.js": "/Speech_Synthesizer/service-worker.js",
+  "static/css/2.3f13305d.chunk.css.map": "/Speech_Synthesizer/static/css/2.3f13305d.chunk.css.map",
+  "static/css/main.937034a5.chunk.css.map": "/Speech_Synthesizer/static/css/main.937034a5.chunk.css.map",
+  "static/media/play.svg": "/Speech_Synthesizer/static/media/play.66563b70.svg",
+  "static/media/stop.svg": "/Speech_Synthesizer/static/media/stop.b9c0abdc.svg"
+}
