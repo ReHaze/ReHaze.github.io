@@ -1252,6 +1252,7 @@ hr {
   .intro__title {
     background: url(../../img/text-index-tablet.png) no-repeat center center;
     width: 460px;
+    max-width: 460px;
     margin: 0 auto;
     margin-top: 50px;
     height: 400px
@@ -1329,7 +1330,8 @@ hr {
   }
 
   .intro-photo__item:nth-of-type(1) {
-    width: 650px
+    width: 650px;
+    max-width: 650px;
   }
 
   .form-information__fields-sector:nth-child(1) {
@@ -1484,7 +1486,8 @@ hr {
   }
 
   .intro-photo__item {
-    width: 324px
+    width: 324px;
+    max-width: 342px;
   }
 
   .block-item__link {
@@ -1840,6 +1843,7 @@ hr {
 
   .intro-photo__item:nth-of-type(1) {
     width: 1200px;
+    max-width: 1200px;
     position: relative
   }
 
@@ -1991,7 +1995,8 @@ hr {
   }
 
   .intro-photo__item {
-    width: 400px
+    width: 400px;
+    max-width: 400px;
   }
 
   .intro-photo__item:nth-of-type(3) .block-item__desc-wrapper {
